@@ -1,0 +1,1 @@
+insert into departments ( id, name, location, country) values (1,'Budget Compliance','Tanquecitos','United States');
