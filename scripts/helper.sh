@@ -302,12 +302,17 @@ gen_object(){
     object_type=${object_type_arr[@]:0:1}
     object_template=${object_type_arr[@]:1:1}
     object_file_exts=${object_type_arr[@]:2:1}
-    object_dest_folder=${object_type_arr[@]:3:1}
+    
 
     if [[ "$p_object_type" == "$object_type" ]]; then
 
       for file_ext in $(echo $object_file_exts | sed "s/;/ /g"); do
-        object_dest_file=$PROJECT_DIR/$object_dest_folder/$p_object_name.$file_ext
+        if [[ $file_ext == "pks" ]]; then
+          object_dest_folder=${object_type_arr[@]:3:1}
+        else 
+          object_dest_folder="package_bodies"
+        fi
+        object_dest_file=$PROJECT_DIR/$object_dest_folder/$p_object_name.sql
 
         if [[ -f $object_dest_file ]]; then
           echo "${COLOR_ORANGE}File already exists:${COLOR_RESET} $object_dest_file"
