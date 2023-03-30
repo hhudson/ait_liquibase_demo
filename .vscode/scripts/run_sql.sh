@@ -10,6 +10,11 @@ source $SCRIPT_DIR/../../scripts/helper.sh
 # File can be referenced either as a full path or relative path
 FILE_FULL_PATH=$2
 FILE_RELATIVE_PATH=$1
+if [[ $3 == "orig_schema" ]]; then
+  DB_CONN=$DB_ORIG_CONN
+else 
+  DB_CONN=$DB_DEST_CONN
+fi
 
 # VSCODE_TASK_COMPILE_FILE should be defined in user-config.sh
 if [ -z "$VSCODE_TASK_COMPILE_FILE" ]; then
