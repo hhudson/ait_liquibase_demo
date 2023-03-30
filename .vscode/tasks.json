@@ -49,8 +49,6 @@
       "options": [
         "package",
         "view",
-        "data_array",
-        "data_json",
         "table"
       ]
     },
