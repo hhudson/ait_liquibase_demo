@@ -12,22 +12,9 @@
         // "${file}"
         // Escaped double quotes are required to make compatible with Cmder in Windows
         "\"${relativeFile}\"",
-        "\"${file}\""
+        "\"${file}\"",
+        "${input:schemaChoice}"
       ],
-      "group": "build",
-      "presentation": {
-        "reveal": "always",
-        "panel": "dedicated"
-      },
-      "options": {},
-      "problemMatcher": []
-    },
-    // EXPORT apex applications
-    {
-      "label": "apex export: liquibase_demo",
-      "type": "shell",
-      "command": ".vscode/scripts/apex_export.sh",
-      "args": [],
       "group": "build",
       "presentation": {
         "reveal": "always",
@@ -64,6 +51,16 @@
         "view",
         "data_array",
         "data_json"
+      ]
+    },
+    {
+      "type": "pickString",
+      "id": "schemaChoice",
+      "description": "Schemas that can be run",
+      // Note: these options must match what's in scripts/project-config.sh
+      "options": [
+        "orig_schema",
+        "dest_schema"
       ]
     },
     {
