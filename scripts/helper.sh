@@ -308,7 +308,7 @@ gen_object(){
 
       for file_ext in $(echo $object_file_exts | sed "s/;/ /g"); do
         if [[ $file_ext == "pkb" ]]; then
-          object_dest_folder="package_bodies"
+          object_dest_folder="package_body"
         else 
           object_dest_folder=${object_type_arr[@]:3:1}
         fi
