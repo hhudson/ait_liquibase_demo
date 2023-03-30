@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Name of Schema
-SCHEMA_NAME=
+SCHEMA_NAME=orig_schema
 # Name of default workspace that applications are associated with
 APEX_WORKSPACE=
 # Comma delimited list of APEX Applications to export. Ex: 100,200
