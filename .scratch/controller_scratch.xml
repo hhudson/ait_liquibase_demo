@@ -26,7 +26,7 @@
   <include file="ref_constraint/employees_department_id_fk_ref_constraint.xml"/> 
   <include file="index/employees_i1_index.xml"/> 
   <include file="trigger/employees_biu_trigger.xml"/> 
-  <changeSet author="hayhudso" id="departments.sql">
+  <changeSet author="ait" id="departments.sql">
         <sqlFile dbms="oracle"
                 encoding="UTF-8"
                 path="data/departments.sql"
@@ -34,7 +34,7 @@
                 splitStatements="true"
                 stripComments="true"/>
   </changeSet>
-  <changeSet author="hayhudso" id="2">
+  <changeSet author="ait" id="2">
         <sqlFile dbms="oracle"
                 encoding="UTF-8"
                 path="data/departments2.sql"
@@ -42,7 +42,7 @@
                 splitStatements="true"
                 stripComments="true"/>
   </changeSet>
-  <changeSet author="hayhudso" id="departments3.sql">
+  <changeSet author="ait" id="departments3.sql">
         <sqlFile dbms="oracle"
                 encoding="UTF-8"
                 path="data/departments3.sql"
@@ -50,7 +50,7 @@
                 splitStatements="true"
                 stripComments="true"/>
   </changeSet>
-  <changeSet author="hayhudso" id="employees.sql">
+  <changeSet author="ait" id="employees.sql">
         <sqlFile dbms="oracle"
                 encoding="UTF-8"
                 path="data/employees.sql"
@@ -62,7 +62,7 @@
   <!-- Tag the install with a version -->
   <changeSet
       id="version_tag"
-      author="hayhudso"
+      author="ait"
       runOnChange="true"
       runAlways="true"
   >

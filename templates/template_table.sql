@@ -1,5 +1,5 @@
 --liquibase formatted sql
---changeset hayhudso:CHANGEME stripComments:false 
+--changeset ait:CHANGEME stripComments:false 
 --preconditions onFail:MARK_RAN onError:HALT
 --precondition-sql-check expectedResult:0 select count(1) from all_tables where upper(table_name) = upper('CHANGEME');
 

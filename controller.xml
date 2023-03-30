@@ -51,23 +51,12 @@
       path="package_body"
   />
 
-  <!-- <changeSet author="hayhudso" id="departments.sql">
-        <sqlFile dbms="oracle"
-                encoding="UTF-8"
-                path="data/departments.sql"
-                relativeToChangelogFile="true"
-                splitStatements="true"
-                stripComments="true"/>
-  </changeSet>
-
-  <changeSet author="hayhudso" id="employees.sql">
-        <sqlFile dbms="oracle"
-                encoding="UTF-8"
-                path="data/employees.sql"
-                relativeToChangelogFile="true"
-                splitStatements="true"
-                stripComments="true"/>
-  </changeSet> -->
+  <!-- Data scripts -->  
+  <includeAll
+      relativeToChangelogFile="true"
+      errorIfMissingOrEmpty="false"
+      path="data"
+  />
 
   <!-- Tag the install with a version -->
   <changeSet
