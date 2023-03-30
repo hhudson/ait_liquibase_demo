@@ -12,8 +12,15 @@
   <!-- Table scripts -->  
   <includeAll
       relativeToChangelogFile="true"
-      errorIfMissingOrEmpty="true"
+      errorIfMissingOrEmpty="false"
       path="table"
+  />
+
+  <!-- View scripts -->  
+  <includeAll
+      relativeToChangelogFile="true"
+      errorIfMissingOrEmpty="false"
+      path="view"
   />
 
   <!-- Tag the install with a version -->
