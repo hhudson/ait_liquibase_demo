@@ -23,6 +23,34 @@
       path="view"
   />
 
+  <!-- Trigger scripts -->  
+  <includeAll
+      relativeToChangelogFile="true"
+      errorIfMissingOrEmpty="false"
+      path="trigger"
+  />
+
+  <!-- Foreign key scripts -->  
+  <includeAll
+      relativeToChangelogFile="true"
+      errorIfMissingOrEmpty="false"
+      path="ref_constraint"
+  />
+
+  <!-- Package spec scripts -->  
+  <includeAll
+      relativeToChangelogFile="true"
+      errorIfMissingOrEmpty="false"
+      path="package_spec"
+  />
+
+  <!-- Package spec scripts -->  
+  <includeAll
+      relativeToChangelogFile="true"
+      errorIfMissingOrEmpty="false"
+      path="package_body"
+  />
+
   <!-- Tag the install with a version -->
   <changeSet
       id="version_tag"
