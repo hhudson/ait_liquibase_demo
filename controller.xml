@@ -9,6 +9,13 @@
   <!-- Always include release.properties -->
   <property file="release.properties" />
 
+  <!-- Table scripts -->  
+  <includeAll
+      relativeToChangelogFile="true"
+      errorIfMissingOrEmpty="true"
+      path="table"
+  />
+
   <!-- Tag the install with a version -->
   <changeSet
       id="version_tag"
