@@ -14,15 +14,15 @@ create table employees (
 ;
 
 -- table index
-create index employees_i1 on employees (department_id);
+-- create index employees_i1 on employees (department_id);
 
 
 -- triggers
-create or replace trigger employees_biu
-    before insert or update 
-    on employees
-    for each row
-begin
-    :new.email := lower(:new.email);
-end employees_biu;
-/
+-- create or replace trigger employees_biu
+--     before insert or update 
+--     on employees
+--     for each row
+-- begin
+--     :new.email := lower(:new.email);
+-- end employees_biu;
+-- /
