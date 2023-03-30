@@ -50,7 +50,8 @@
         "package",
         "view",
         "table",
-        "data"
+        "data",
+        "trigger"
       ]
     },
     {

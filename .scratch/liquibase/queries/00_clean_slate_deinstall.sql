@@ -11,5 +11,6 @@ drop VIEW    EMP_V
 select object_type, object_name
 from user_objects
 where object_type in ('PACKAGE', 'PACKAGE BODY', 'TABLE', 'VIEW', 'TRIGGER')
+and object_name != 'DATABASECHANGELOGLOCK'
 order by 1,2
 /
