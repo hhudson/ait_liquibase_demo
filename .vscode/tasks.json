@@ -50,7 +50,8 @@
         "package",
         "view",
         "data_array",
-        "data_json"
+        "data_json",
+        "table"
       ]
     },
     {

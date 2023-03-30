@@ -307,10 +307,10 @@ gen_object(){
     if [[ "$p_object_type" == "$object_type" ]]; then
 
       for file_ext in $(echo $object_file_exts | sed "s/;/ /g"); do
-        if [[ $file_ext == "pks" ]]; then
-          object_dest_folder=${object_type_arr[@]:3:1}
-        else 
+        if [[ $file_ext == "pkb" ]]; then
           object_dest_folder="package_bodies"
+        else 
+          object_dest_folder=${object_type_arr[@]:3:1}
         fi
         object_dest_file=$PROJECT_DIR/$object_dest_folder/$p_object_name.sql
 
