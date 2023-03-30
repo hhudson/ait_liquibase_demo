@@ -1,0 +1,1 @@
+index scripts belong here
