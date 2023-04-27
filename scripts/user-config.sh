@@ -6,23 +6,24 @@
 # source ~/.aliases.sh
 
 # Connection string to development environment
-DB_ORIG_CONN="/nolog @/Users/hayhudso/hhh/connections/hayden/connect_orig_schema.sql"
-DB_DEST_CONN="/nolog @/Users/hayhudso/hhh/connections/hayden/connect_dest_schema.sql"
+DB_ORIG_CONN="-c orig_schema"
+DB_DEST_CONN="-c dest_schema"
+# /nolog @/Users/hayhudso/hhh/connections/connect_dev.sql
 
+# https://gbuconfluence.oraclecorp.com/pages/viewpage.action?pageId=347621095
+DCCM=/Users/hayhudso/hhh/dccm_util/dccm/dccm.sh
 # SQLcl binary (either sql or sqlcl depending on if you changed anything)
 # If using a docker container for SQLcl ensure the run alias does not include the "-it" option as TTY is not necessary for these scripts
 SQLCL=sql
-
 # sql*plus binary
 # If using a docker container for sqlplus ensure the run alias does not include the "-it" option as TTY is not necessary for these scripts
 SQLPLUS=sqlplus
-
 
 # *** VSCode settings ***
 
 # Compile file: chose  or 
 # Recommended to use  as it's quicker
-VSCODE_TASK_COMPILE_BIN=$SQLCL
+VSCODE_TASK_COMPILE_BIN=$DCCM
 
 # File to compile. Options:
 # \$FILE_RELATIVE_PATH: Will evaluate to relative to project ex: views/my_view.sql

@@ -8,3 +8,4 @@ begin
     null;
 end CHANGEME_biu;
 /
+--rollback drop package CHANGEME_biu;

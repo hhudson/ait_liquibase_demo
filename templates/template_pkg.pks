@@ -7,4 +7,4 @@ create or replace package CHANGEME authid definer as
 
 end CHANGEME;
 /
---rollback drop package body CHANGEME;
+--rollback drop package CHANGEME;
